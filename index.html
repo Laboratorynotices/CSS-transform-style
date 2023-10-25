@@ -8,6 +8,25 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+    <!-- Логотип, будет находиться на одном месте. -->
+    <div class="logo"></div>
+
+    <!-- Основной блок со слоями, для 3D эффекта. -->
+    <section class="layers">
+        <!-- Обязательный промежутный компонент. -->
+        <div class="layers_container">
+            <!-- Задний фон, он же первый слой -->
+            <div class="layers_item layer-1"></div>
+            <div class="layers_item layer-2"></div>
+            <!-- Заголовок странички, hero-content -->
+            <div class="layers_item layer-3"></div>
+            <div class="layers_item layer-4"></div>
+            <div class="layers_item layer-5"></div>
+            <div class="layers_item layer-6"></div>
+        </div>
+    </section>
+
+    <!-- "Строительные леса". Нужны для разработки, потом удалим. -->
+    <div style="height: 100vh;"></div>
 </body>
 </html>
