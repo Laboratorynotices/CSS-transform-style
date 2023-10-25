@@ -9,3 +9,29 @@
 :root {
 
 }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/*  Логотип.
+    Контейнер понадобился,
+    чтобы таким образом выровнять его по центру.
+*/
+.logo_container {
+    display: flex;
+    justify-content: center;
+    height: 0;
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    top: 60px;
+    position: relative;
+    z-index: 10;
+}
