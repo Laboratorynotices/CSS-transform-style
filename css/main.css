@@ -56,18 +56,19 @@ body {
 .layers_container {
     height: 100vh;
     transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
 }
 
 /*  Описываем общую часть для слоёв заднего фона.
     При помощи отрицательного inset мы растягиваем
-    картинки, чтобы скрыть их края за пределами экрана. 
+    картинки, чтобы скрыть их края за пределами экрана.
 */
 .layers_item {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: absolute;
-    inset: -7.5vh -7.5vw;
+    inset: -10vh -10vw;
 }
 
 /*  Специализированное описание самого заднего фона.
