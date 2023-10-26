@@ -71,10 +71,28 @@ body {
     inset: -10vh -10vw;
 }
 
-/*  Специализированное описание самого заднего фона.
+/*  Специализированное описание самого заднего слоя (фона).
 */
 .layer-1 {
     background-image: url(../img/3D-background-image.jpg);
     transform: translateZ(-100px);
 }
 
+/* Специализированное описание второго заднего слоя.
+    Специально изменим маштаб, чтобы все рыбки влезали
+    в экран.
+*/
+.layer-2 {
+    background-image: url(../img/Layer-2.png);
+    transform: translateZ(100px);
+    background-size: 80vw;
+}
+
+/* Специализированное описание третьего заднего слоя.
+*/
+.layer-3 {
+    background-image: url(../img/Layer-3.png);
+    transform: translateZ(200px);
+    background-size: 24vw;
+    background-position: 83% 13%;
+}
