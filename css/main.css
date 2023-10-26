@@ -31,7 +31,7 @@ body {
     background-size: contain;
     height: 200px;
     width: 200px;
-    top: 64px;
+    top: 48px;
     position: relative;
     z-index: 10;
 }
@@ -69,6 +69,9 @@ body {
     background-position: center;
     position: absolute;
     inset: -10vh -10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*  Специализированное описание самого заднего слоя (фона).
@@ -78,7 +81,7 @@ body {
     transform: translateZ(-100px);
 }
 
-/* Специализированное описание второго заднего слоя.
+/* Специализированное описание второго слоя.
     Специально изменим маштаб, чтобы все рыбки влезали
     в экран.
 */
@@ -88,11 +91,51 @@ body {
     background-size: 80vw;
 }
 
-/* Специализированное описание третьего заднего слоя.
+/* Специализированное описание третьего слоя.
 */
 .layer-3 {
     background-image: url(../img/Layer-3.png);
     transform: translateZ(200px);
     background-size: 24vw;
     background-position: 83% 13%;
+}
+
+/* Специализированное описание четвёртого слоя.
+    В этом блоке не будет картинки,
+    а заголовок (hero-content).
+*/
+.layer-4 {
+    transform: translateZ(400px);
+}
+
+/*****************************************/
+/*** Описание заголовка "hero-content" ***/
+/*****************************************/
+.hero-content {
+    margin-top: 15vh;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: xx-large;
+    line-height: .8em;
+}
+
+.hero-content h1 span {
+    display: block;
+}
+
+.hero-content_p {
+    font-size: small;
+}
+
+.hero-content_button {
+    background-color: transparent;
+    border-radius: 10em;
+    border: rgba(255, 255, 255, .4) 3px solid;
+    color: white;
+    padding: .2em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
 }

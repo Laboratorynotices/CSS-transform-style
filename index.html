@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D эффект при помощи CSS</title>
+    <title>3D with CSS transform-style preserve-3d</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer></script>
 </head>
@@ -25,9 +25,22 @@
             <!-- Задний фон, он же первый слой -->
             <div class="layers_item layer-1"></div>
             <div class="layers_item layer-2"></div>
-            <!-- Заголовок странички, hero-content -->
             <div class="layers_item layer-3"></div>
-            <div class="layers_item layer-4"></div>
+            <!-- Заголовок странички, hero-content -->
+            <div class="layers_item layer-4">
+                <div class="hero-content">
+                    <h1>
+                        Zugspitze Sea
+                        <span>Diving School</span>
+                    </h1>
+                    <div class="hero-content_p">
+                        We will dive You to the very top!
+                    </div>
+                    <button class="hero-content_button">
+                        Join us!
+                    </button>
+                </div>
+            </div>
             <div class="layers_item layer-5"></div>
             <div class="layers_item layer-6"></div>
         </div>
