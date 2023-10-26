@@ -108,6 +108,35 @@ body {
     transform: translateZ(400px);
 }
 
+/* Специализированное описание пятого слоя.
+*/
+.layer-5 {
+    background-image: url(../img/Layer-5.png);
+    background-position: left bottom;
+    background-size: 45%;
+    transform: translateZ(500px);
+    pointer-events: none;
+}
+
+/* Специализированное описание шестого слоя.
+*/
+.layer-6 {
+    background-image: url(../img/Layer-6.png);
+    background-position: right bottom;
+    background-size: 45%;
+    transform: translateZ(550px);
+    pointer-events: none;
+}
+
+/* Специализированное описание седьмого слоя.
+*/
+.layer-7 {
+    background-image: url(../img/Layer-7.png);
+    background-position: 40% 40%;
+    background-size: 12%;
+    transform: translateZ(600px);
+}
+
 /*****************************************/
 /*** Описание заголовка "hero-content" ***/
 /*****************************************/
